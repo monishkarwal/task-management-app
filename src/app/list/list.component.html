@@ -1,0 +1,18 @@
+<div class="list">
+  <h3>{{ listName }}</h3>
+  <div class="delete-list">
+    <button (click)="deleteList()">Delete</button>
+  </div>
+  <div class="list-items">
+    <app-list-item
+      *ngFor="let item of listItems"
+      [data]="item"
+      [listName]="listName"
+      [last]="last"
+    ></app-list-item>
+  </div>
+  <div class="add-list-item">
+    <input type="text" #input />
+    <button (click)="addToList(input.value)">Add</button>
+  </div>
+</div>

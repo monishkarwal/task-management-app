@@ -1,0 +1,18 @@
+.add-list-container {
+  height: 80px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lists-container {
+  border: 3px solid gray;
+  border-radius: 10px;
+  width: 95%;
+  min-height: calc(100vh - 400px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
